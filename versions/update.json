@@ -1,5 +1,7 @@
 {
   "version": "1.2.0",
   "url": "https://github.com/CodeMasterLtd/CripCoreManager/releases/tag/1.2.0",
-  "changelog": "🧠 Added Repair Profile system\n🔄 Added live profile diff system\n📦 Added drag & drop mod installer\n⚡ Improved performance and UI responsiveness\n🛡️ Stability improvements and bug fixes"
+  "changelog": "Introduced a Core Lock System to prevent profile switching until initial setup is completed, protecting users from accidental data loss.\nAdded First-Time Setup Initialization, automatically cloning existing GTA V mod folders into Game Build 1 for a safe starting point.\nImplemented a new cripcore.ini system stored in the GTA V directory to manage core settings and persistence.\nAdded Update Notification Settings, allowing users to toggle alerts for CripCore, ScriptHookV, ScriptHookVDotNet, RageNativeUI, LemonUI and LSPDFR.\nImproved update detection system with smarter version tracking and reduced false positives.\nAdded safeguards to prevent corrupted or incomplete profiles from being loaded.\nSettings are now stored persistently outside the app (no reliance on localStorage).\nEnhanced Core Settings page with interactive toggles for update notifications.\nImproved overall stability and structure of profile management system.\nAdded a Core Downloads page, which allows CripCore users to download file's we have edited (More to come on this).",
+  "bugfixes": "Fixed an issue when lauching the game, Sometime CripCore would like to steal RagePluginHook, this was resolved, and should now start properly, without CripCore kidnapping RagePluginHook.\nFixed an issue when using CripCore, Sometimes CripCore would like to remove ELS.ini, this was resolved.",
+  "knownbugs" : "None at this current time."
 }
